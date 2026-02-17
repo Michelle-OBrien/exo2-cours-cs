@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cave en Ligne — Vins & Spiritueux</title>
+  <meta name="description" content="Boutique en ligne de vins : rouges, blancs, rosés, effervescents. Sélection, fiches produits, panier et commande." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Cave en Ligne</h1>
+    <p>Vins sélectionnés • Livraison • Paiement sécurisé</p>
+
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#categories">Catégories</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#panier">Panier</a></li>
+        <li><a href="#commande">Commander</a></li>
+        <li><a href="#aide">Aide</a></li>
+      </ul>
+    </nav>
+
+    <form action="#" method="get" aria-label="Recherche">
+      <label for="q">Rechercher un vin</label>
+      <input id="q" name="q" type="search" placeholder="Ex : Bordeaux, Chardonnay, champagne…" />
+      <button type="submit">Rechercher</button>
+    </form>
+  </header>
+
+  <main id="accueil">
+    <section aria-labelledby="titre-hero">
+      <h2 id="titre-hero">Sélection du moment</h2>
+      <p>Découvrez une sélection simple : rouges, blancs, rosés et effervescents.</p>
+      <p><a href="#catalogue">Voir le catalogue</a></p>
+    </section>
+
+    <section id="categories" aria-labelledby="titre-categories">
+      <h2 id="titre-categories">Catégories</h2>
+      <ul>
+        <li><a href="#cat-rouges">Rouges</a></li>
+        <li><a href="#cat-blancs">Blancs</a></li>
+        <li><a href="#cat-roses">Rosés</a></li>
+        <li><a href="#cat-effervescents">Effervescents</a></li>
+      </ul>
+    </section>
+
+    <section id="catalogue" aria-labelledby="titre-catalogue">
+      <h2 id="titre-catalogue">Catalogue</h2>
+
+      <section id="cat-rouges" aria-labelledby="titre-rouges">
+        <h3 id="titre-rouges">Rouges</h3>
+
+        <ul>
+          <li>
+            <article aria-labelledby="p1-nom">
+              <h4 id="p1-nom">Bordeaux AOC — Château Exemple 2020</h4>
+              <p><strong>Prix :</strong> 14,90 €</p>
+              <p><strong>Profil :</strong> fruits rouges, tanins souples</p>
+              <p><strong>Accords :</strong> bœuf, fromages affinés</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 13%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> Bordeaux</p>
+                <p><strong>Cépages :</strong> Merlot, Cabernet Sauvignon</p>
+                <p><strong>Température de service :</strong> 16–18°C</p>
+                <p><strong>Garde :</strong> 3–6 ans</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="BDX-CHX-2020" />
+                <label for="p1-qty">Quantité</label>
+                <input id="p1-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+
+          <li>
+            <article aria-labelledby="p2-nom">
+              <h4 id="p2-nom">Côtes-du-Rhône AOC — Domaine Démo 2021</h4>
+              <p><strong>Prix :</strong> 11,50 €</p>
+              <p><strong>Profil :</strong> épices, cerise noire</p>
+              <p><strong>Accords :</strong> grillades, cuisine méditerranéenne</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 14%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> Vallée du Rhône</p>
+                <p><strong>Cépages :</strong> Grenache, Syrah</p>
+                <p><strong>Température de service :</strong> 16–18°C</p>
+                <p><strong>Garde :</strong> 2–5 ans</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="CDR-DD-2021" />
+                <label for="p2-qty">Quantité</label>
+                <input id="p2-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cat-blancs" aria-labelledby="titre-blancs">
+        <h3 id="titre-blancs">Blancs</h3>
+
+        <ul>
+          <li>
+            <article aria-labelledby="p3-nom">
+              <h4 id="p3-nom">Chardonnay IGP — Cuvée Exemple 2022</h4>
+              <p><strong>Prix :</strong> 9,90 €</p>
+              <p><strong>Profil :</strong> agrumes, fleurs blanches</p>
+              <p><strong>Accords :</strong> poisson, volaille, salade</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 12,5%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> France</p>
+                <p><strong>Cépages :</strong> Chardonnay</p>
+                <p><strong>Température de service :</strong> 8–10°C</p>
+                <p><strong>Garde :</strong> 1–3 ans</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="CHD-IGP-2022" />
+                <label for="p3-qty">Quantité</label>
+                <input id="p3-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+
+          <li>
+            <article aria-labelledby="p4-nom">
+              <h4 id="p4-nom">Sancerre AOC — Domaine Démo 2021</h4>
+              <p><strong>Prix :</strong> 19,80 €</p>
+              <p><strong>Profil :</strong> vif, minéral</p>
+              <p><strong>Accords :</strong> fruits de mer, chèvre</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 13%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> Loire</p>
+                <p><strong>Cépages :</strong> Sauvignon Blanc</p>
+                <p><strong>Température de service :</strong> 8–10°C</p>
+                <p><strong>Garde :</strong> 2–6 ans</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="SAN-DD-2021" />
+                <label for="p4-qty">Quantité</label>
+                <input id="p4-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cat-roses" aria-labelledby="titre-roses">
+        <h3 id="titre-roses">Rosés</h3>
+
+        <ul>
+          <li>
+            <article aria-labelledby="p5-nom">
+              <h4 id="p5-nom">Côtes de Provence AOC — Rosé Clair 2023</h4>
+              <p><strong>Prix :</strong> 12,40 €</p>
+              <p><strong>Profil :</strong> frais, petits fruits</p>
+              <p><strong>Accords :</strong> apéritif, salades, grillades</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 12,5%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> Provence</p>
+                <p><strong>Cépages :</strong> Grenache, Cinsault</p>
+                <p><strong>Température de service :</strong> 8–10°C</p>
+                <p><strong>Garde :</strong> 1–2 ans</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="CDP-ROSE-2023" />
+                <label for="p5-qty">Quantité</label>
+                <input id="p5-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cat-effervescents" aria-labelledby="titre-effervescents">
+        <h3 id="titre-effervescents">Effervescents</h3>
+
+        <ul>
+          <li>
+            <article aria-labelledby="p6-nom">
+              <h4 id="p6-nom">Champagne AOC — Brut Tradition</h4>
+              <p><strong>Prix :</strong> 34,90 €</p>
+              <p><strong>Profil :</strong> bulles fines, brioche</p>
+              <p><strong>Accords :</strong> apéritif, fruits de mer</p>
+              <p><strong>Contenance :</strong> 75 cl • <strong>Degré :</strong> 12%</p>
+
+              <details>
+                <summary>Voir la fiche produit</summary>
+                <p><strong>Région :</strong> Champagne</p>
+                <p><strong>Cépages :</strong> Pinot Noir, Chardonnay</p>
+                <p><strong>Température de service :</strong> 6–8°C</p>
+                <p><strong>Dosage :</strong> Brut</p>
+              </details>
+
+              <form action="#panier" method="post">
+                <input type="hidden" name="sku" value="CHAMP-BRUT-001" />
+                <label for="p6-qty">Quantité</label>
+                <input id="p6-qty" name="qty" type="number" min="1" value="1" />
+                <button type="submit">Ajouter au panier</button>
+              </form>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="panier" aria-labelledby="titre-panier">
+      <h2 id="titre-panier">Panier</h2>
+
+      <p>Cette section est une maquette statique (sans JavaScript). Les boutons “Ajouter au panier” enverraient normalement vers un backend.</p>
+
+      <table>
+        <caption>Résumé du panier</caption>
+        <thead>
+          <tr>
+            <th scope="col">Produit</th>
+            <th scope="col">SKU</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bordeaux AOC — Château Exemple 2020</td>
+            <td>BDX-CHX-2020</td>
+            <td>14,90 €</td>
+            <td>1</td>
+            <td>14,90 €</td>
+          </tr>
+          <tr>
+            <td>Chardonnay IGP — Cuvée Exemple 2022</td>
+            <td>CHD-IGP-2022</td>
+            <td>9,90 €</td>
+            <td>2</td>
+            <td>19,80 €</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="4">Sous-total</th>
+            <td>34,70 €</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="4">Livraison</th>
+            <td>6,90 €</td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="4">Total</th>
+            <td><strong>41,60 €</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p><a href="#commande">Passer à la commande</a></p>
+    </section>
+
+    <section id="commande" aria-labelledby="titre-commande">
+      <h2 id="titre-commande">Commander</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Informations client</legend>
+
+          <p>
+            <label for="prenom">Prénom</label><br />
+            <input id="prenom" name="prenom" type="text" autocomplete="given-name" required />
+          </p>
+
+          <p>
+            <label for="nom">Nom</label><br />
+            <input id="nom" name="nom" type="text" autocomplete="family-name" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label><br />
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </p>
+
+          <p>
+            <label for="telephone">Téléphone</label><br />
+            <input id="telephone" name="telephone" type="tel" autocomplete="tel" />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adresse de livraison</legend>
+
+          <p>
+            <label for="adresse1">Adresse</label><br />
+            <input id="adresse1" name="adresse1" type="text" autocomplete="address-line1" required />
+          </p>
+
+          <p>
+            <label for="adresse2">Complément</label><br />
+            <input id="adresse2" name="adresse2" type="text" autocomplete="address-line2" />
+          </p>
+
+          <p>
+            <label for="cp">Code postal</label><br />
+            <input id="cp" name="cp" type="text" autocomplete="postal-code" required />
+          </p>
+
+          <p>
+            <label for="ville">Ville</label><br />
+            <input id="ville" name="ville" type="text" autocomplete="address-level2" required />
+          </p>
+
+          <p>
+            <label for="pays">Pays</label><br />
+            <select id="pays" name="pays" autocomplete="country-name" required>
+              <option value="">— Sélectionner —</option>
+              <option value="FR">France</option>
+              <option value="BE">Belgique</option>
+              <option value="CH">Suisse</option>
+              <option value="LU">Luxembourg</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Livraison & paiement</legend>
+
+          <p>
+            <label for="livraison">Mode de livraison</label><br />
+            <select id="livraison" name="livraison" required>
+              <option value="">— Sélectionner —</option>
+              <option value="standard">Standard (2–4 jours)</option>
+              <option value="express">Express (24–48h)</option>
+              <option value="pickup">Point relais</option>
+            </select>
+          </p>
+
+          <p>
+            <span>Paiement</span><br />
+            <label><input type="radio" name="paiement" value="cb" required /> Carte bancaire</label><br />
+            <label><input type="radio" name="paiement" value="paypal" /> PayPal</label><br />
+            <label><input type="radio" name="paiement" value="virement" /> Virement</label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="cgv" required />
+              J’accepte les conditions générales de vente
+            </label>
+          </p>
+        </fieldset>
+
+        <button type="submit">Valider la commande</button>
+      </form>
+    </section>
+
+    <section id="aide" aria-labelledby="titre-aide">
+      <h2 id="titre-aide">Aide</h2>
+      <ul>
+        <li><a href="#mentions">Mentions légales</a></li>
+        <li><a href="#livraison-retours">Livraison & retours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <section id="livraison-retours" aria-labelledby="titre-livraison-retours">
+        <h3 id="titre-livraison-retours">Livraison & retours</h3>
+        <p>Délais indicatifs : Standard 2–4 jours, Express 24–48h. Retours acceptés selon conditions.</p>
+      </section>
+
+      <section id="contact" aria-labelledby="titre-contact">
+        <h3 id="titre-contact">Contact</h3>
+        <p>Email : contact@exemple-cave.fr</p>
+        <p>Téléphone : +33 1 23 45 67 89</p>
+      </section>
+
+      <section id="mentions" aria-labelledby="titre-mentions">
+        <h3 id="titre-mentions">Mentions légales</h3>
+        <p>Maquette HTML — Remplacez ces informations par les vôtres (éditeur, hébergeur, etc.).</p>
+        <p>La vente d’alcool est interdite aux mineurs. À consommer avec modération.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Cave en Ligne — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
